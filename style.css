@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.row.flex {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  padding-top: 4vh;
+  padding-bottom: 5vh;
+}
+
+h1 {
+  padding-top: 15%;
+  font-size: 6vh;
+  font-weight: 600;
+  color: rgb(54, 156, 179);
+  text-align: center;
+}
+.field {
+  padding: 2vh;
+  border: 1px solid rgb(54, 156, 179);
+  border-radius: 4px;
+  width: 30%;
+  font-family: system-ui;
+  font-weight: 600;
+  font-size: 3vh;
+  color: rgba(97, 2, 73, 0.6);
+}
+.field:focus {
+  background-color: rgba(240, 79, 199, 0.6);
+  outline: 0; /* убирает border при фокусе, border:none не сработал */
+  outline-offset: 0;
+  color: white;
+}
+.btn {
+  background-color: rgb(54, 156, 179);
+  color: white;
+  padding: 1.8%;
+  font-family: system-ui;
+  font-weight: 600;
+  border: none;
+  letter-spacing: 5px;
+  font-size: 3vh;
+  cursor: pointer;
+  box-shadow: none;
+}
+.ErrorMessage {
+  display: none;
+  text-align: center;
+  color: rgb(203, 9, 9);
+  font-family: Impact, Haettenschweiler;
+  font-weight: 400;
+  font-size: 5vh;
+}
+.InfoMessage {
+  text-align: center;
+  color: rgb(54, 156, 179);
+  font-family: Impact, Haettenschweiler;
+  font-weight: 400;
+  font-size: 4vh;
+  display: none;
+}
+.greeting_img {
+  display: flex;
+  justify-content: center;
+}
