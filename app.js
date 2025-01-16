@@ -7,7 +7,7 @@ btn.addEventListener("click", countDays);
 function countDays() {
   const currentDate = new Date();
   console.log(currentDate);
-  let BirthDate = new Date(field.value);
+  let BirthDate = new Date(field.value); // переменные с большой буквы не называть, ошибка!!//
   BirthDate.setHours(0); //обнуляем +3часа, которые приходят из поля в дате рождения
   console.log(BirthDate); //BirthDate из поля приходит не 00:00 GMT+03:00, а 03:00 GMT+03:00, разница с currentDate в 3 часа..//
   /* если user выбирает свой др не в текущем году, а в другом, например, в году своего рождения, то 
